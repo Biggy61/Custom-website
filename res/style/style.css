@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     user-select: none;
-    
+    overflow-x: hidden;
 }
 html, body {
     overflow: auto;
@@ -15,49 +15,55 @@ html, body {
     
 }
 header{
-    background-image: linear-gradient(to right,#de6262,#ffb88c );
-    height: 150px;
+    background-color: #424C55;
+    height: 100px;
     width: 100%;
     margin: 0;
+    font-size: 30px;
+    padding-top: 10px;
+}
+.header a{
+  color: white; 
+  text-decoration: none;
+   
+}
+.header a:hover{
+    color: rgb(190, 190, 190);
+    transition: color 0.5s ease;
+    color: white; 
+}
+.header a b{
+    font-size: 50px;
 }
 
-button{
-    background-color: transparent;
-    border: none;
-    font-size: 30px;
+
+li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: rgb(217, 217, 217);
+    margin: auto;
+    display: block;
+    color: white; 
     
 }
-button a{
-    color: white;
-    text-decoration: none;
+li a:hover::after{
+    width: 100%;
+   transition: width 0.3s linear;
+    
 }
+li a:hover{
+    color: rgb(217, 217, 217);
+    ; 
+}
+
 
 
 
 
 /* ------------ TELO ----------   */
-#telo{
-    
-}
-#nadpis{
-    font-size: 660%;
-    text-align: center;
-}
-#img{
-   border-radius: 350px;  
-   background-color: blue;
-   width: 300px;
-   height: 300px;
-   position: absolute;
-   top: 250px;
-   left: 100px;
-}
-#text{
-    position: absolute;
-    top: 270px;
-    left: 500px;
-}
 
+/*------------kontakt--------------*/
 
 
 
@@ -66,7 +72,7 @@ button a{
 
 
 footer{
-    background-image: linear-gradient(to right,#de6262,#ffb88c );
+    background-color: #424C55;
     height: 150px;
     width: 100%;
     margin: 0;
